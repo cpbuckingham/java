@@ -11,3 +11,4 @@ public class compound_interest {
 		}
 	}
 }
+// A=P(1+R)^N
