@@ -3,9 +3,6 @@ package bucky;
 public class contructors {
 		private String girlName;
 		
-		public tuna(String name){
-			girlName=name;
-	}
 		public void setName(String name){
 			girlName=name;
 			
