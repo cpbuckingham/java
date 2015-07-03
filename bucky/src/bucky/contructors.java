@@ -1,6 +1,6 @@
 package bucky;
 
-public class tuna {
+public class contructors {
 		private String girlName;
 		
 		public tuna(String name){
