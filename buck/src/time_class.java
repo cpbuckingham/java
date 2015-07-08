@@ -14,10 +14,14 @@ public class time_class {
 		public String toMilitary(){
 			return String.format("%02d:%02d:%02d", hour, minute, second );
 		}
+		public String toNormal(){
+			return String.format("%d:%02d:%02d%s", ((hour==0||hour==12)?12: hour %12), minute, second, (hour<12? " AM": " PM"));
+		}
 		public static void main(String[]args){
 			time_class time_classObject = new time_class();
 			System.out.println(time_classObject.toMilitary());
-			time_classObject.setTime(14,45,73);
+			time_classObject.setTime(20,45,73);
 			System.out.println(time_classObject.toMilitary());
+			System.out.println(time_classObject.toNormal());
 		}
 	}
