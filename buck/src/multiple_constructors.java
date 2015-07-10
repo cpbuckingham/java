@@ -42,7 +42,19 @@ public class multiple_constructors {
 	}
 	
 	public String toMilitary(){
-		return String.format("%02d:%02d:%02d", hour, minute, second );
+		return String.format("%02d:%02d:%02d", getHour(), getMinute(), getSecond() );
+	}
+	public static void main(String[] args){
+		multiple_constructors multiple_constructorsObject = new multiple_constructors();
+		multiple_constructors multiple_constructorsObject2 = new multiple_constructors(5);
+		multiple_constructors multiple_constructorsObject3 = new multiple_constructors(5,13);
+		multiple_constructors multiple_constructorsObject4 = new multiple_constructors(5,13,43);
+		
+		System.out.printf("%s\n", multiple_constructorsObject.toMilitary());
+		System.out.printf("%s\n", multiple_constructorsObject2.toMilitary());
+		System.out.printf("%s\n", multiple_constructorsObject3.toMilitary());
+		System.out.printf("%s\n", multiple_constructorsObject4.toMilitary());
+		
 	}
 
 }
