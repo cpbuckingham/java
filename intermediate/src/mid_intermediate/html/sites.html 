@@ -1,0 +1,10 @@
+<html>
+<body>
+<applet code="sites_applet.class" widith="500" height="230">
+<param name="title0" value="blog">
+<param name="address0" value="http://cpbuckingham.ghost.io/">
+<param name="title1" value="site">
+<param name="address1" value="http://cpbuckingham.github.io./">
+</applet
+</body>
+</html>
